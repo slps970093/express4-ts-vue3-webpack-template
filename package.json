@@ -1,0 +1,44 @@
+{
+  "name": "ts-express",
+  "version": "1.0.0",
+  "description": "Simple Typescript Express with Webpack, Model, Controller. For Api purpose.",
+  "main": "src/server.ts",
+  "scripts": {
+    "dev:express": "ts-node ./src/server.ts",
+    "dev:webpack": "webpack --watch --mode=development",
+    "dev": "concurrently npm:dev:*",
+    "watch:webpack": "webpack --watch --mode=development",
+    "watch:express": "ts-node-dev ./src/server.ts",
+    "watch": "concurrently npm:watch:*"
+  },
+  "author": {
+    "name": "Chou, Yu-Hsien",
+    "url": "https://github.com/arnoldfederis"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.12",
+    "@vue/compiler-sfc": "^3.1.5",
+    "body-parser": "^1.19.0",
+    "concurrently": "^7.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "dotenv-webpack": "^8.0.1",
+    "express": "^4.17.1",
+    "ts-loader": "^9.2.3",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.3.2",
+    "vue-loader": "^16.1.2",
+    "webpack": "^5.49.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-node-externals": "^3.0.0",
+    "webpack-shell-plugin-next": "^2.2.2"
+  },
+  "dependencies": {
+    "@types/swig": "^0.0.30",
+    "swig": "^1.4.2",
+    "vue": "^3.2.40"
+  }
+}
